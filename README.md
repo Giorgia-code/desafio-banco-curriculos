@@ -4,6 +4,7 @@ O mesmo foi desenvolvido utilizando React, Node.js e MySql, como forma de valida
 
 # Projeto
 O projeto consiste em uma Landing page com formulário para preenchimento de candidatura.
+Acessar o projeto: https://desafio-banco-curriculos.herokuapp.com
 
 # Regra de Negócio
 Não pode haver 2 cadastros de candidatos com o mesmo cpf
