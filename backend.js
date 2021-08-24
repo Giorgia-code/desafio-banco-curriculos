@@ -14,7 +14,7 @@ app.use(cors())
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 // Definicao de porta
-const port = 3030
+const port = 3000
 
 // Abrindo conexao com base de dados
 var connection = mysql.createConnection({
