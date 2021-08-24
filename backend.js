@@ -54,7 +54,7 @@ app.post('/candidatos', (req, res) => {
   } = req.body
 
   // Validacao do CPF
-  var sqlCandidatoCpf = ` SELECT cpf FROM sistema_candidatos.candidatos WHERE cpf = '${cpf}'`
+  var sqlCandidatoCpf = ` SELECT cpf FROM candidatos WHERE cpf = '${cpf}'`
   connection.query(sqlCandidatoCpf, function (erro, rows) {
     if (erro) {
       return res.status(400).json(erro)
