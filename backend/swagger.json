@@ -1,0 +1,133 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "API de cadastro de candidatos",
+    "version": "1.0.0",
+    "title": "Jobs NET",
+    "contact": {
+      "email": "apiteam@sistemacadastro.com.br"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:3030",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "candidatos",
+      "description": "Endpoint para cadastro de candidato"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/candidatos": {
+      "post": {
+        "tags": [
+          "candidatos"
+        ],
+        "summary": "Cadastro de candidato",
+        "description": "Cadastre candidato na base de dados",
+        "operationId": "cadastroCandidatos",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Objeto para cadastro de candidato",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Candidatos"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Cadastro realizado com sucesso",
+            "schema": {
+              "$ref": "#/definitions/Candidatos"
+            }
+          },
+          "400": {
+            "description": "Não foi possível completar seu cadastro"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Candidatos": {
+      "type": "object",
+      "properties": {
+        "nome": {
+          "type": "string"
+        },
+        "cargo": {
+          "type": "string"
+        },
+        "dataNascimento": {
+          "type": "string",
+          "format": "dd/MM/yyyy"
+        },
+        "estadoCivil": {
+          "type": "string"
+        },
+        "sexo": {
+          "type": "string"
+        },
+        "logradouro": {
+          "type": "string"
+        },
+        "cep": {
+          "type": "string",
+          "format": "11111111"
+        },
+        "bairro": {
+          "type": "string"
+        },
+        "cidade": {
+          "type": "string"
+        },
+        "uf": {
+          "type": "string"
+        },
+        "telefoneFixo1": {
+          "type": "string"
+        },
+        "telefoneFixo2": {
+          "type": "string"
+        },
+        "celular": {
+          "type": "string"
+        },
+        "contato": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "identidade": {
+          "type": "string"
+        },
+        "cpf": {
+          "type": "string",
+          "format": "33333333333"
+        },
+        "veiculo": {
+          "type": "string"
+        },
+        "habilitacao": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
