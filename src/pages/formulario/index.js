@@ -61,7 +61,9 @@ export default function Formulario() {
     })
 
     axios
-      .post('http://localhost:3030/candidatos', json, { headers: headers })
+      .post('https://desafio-banco-curriculos.herokuapp.com/candidatos', json, {
+        headers: headers
+      })
       .then(response => {
         console.log(response)
         if (response.status !== 200) {
