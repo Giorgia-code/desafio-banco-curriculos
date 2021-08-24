@@ -124,7 +124,7 @@ function InserirEndereco(endereco) {
 }
 
 app.get('/', (req, res) => {
-  res.send('Hello')
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
 // Subindo servidor Node
