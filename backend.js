@@ -128,6 +128,6 @@ app.get('/', (req, res) => {
 })
 
 // Subindo servidor Node
-app.listen(port, () => {
-  console.log(`To OK at http://localhost:${port}`)
+const listener = app.listen(process.env.PORT || port, () => {
+  console.log(`To OK em ${listener.address().port}`)
 })
