@@ -10,4 +10,4 @@ Não pode haver 2 cadastros de candidatos com o mesmo cpf
 Todo candidato precisará preencher os campos: CPF, Nome, Data Nascimento, Cep, Logradouro, Número, Bairro, Cidade, Email, Profissão e Celular
 
 # Documentação 
-Documentação dos recursos foi feito utilizando o Swagger e pode ser obtida através do link: 
+Documentação dos recursos foi feito utilizando o Swagger e pode ser obtida através do link: https://desafio-banco-curriculos.herokuapp.com/api-docs
